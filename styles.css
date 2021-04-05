@@ -1,0 +1,77 @@
+*{
+    font-size: 14px;
+}
+
+.container {
+    
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+.title{
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    padding-left:10px;
+    padding-top:10px;
+}
+
+.footer{
+
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 1px solid rgb(190, 190, 190);
+    padding:5px;
+ 
+}
+
+
+.fields{
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(248, 213, 213);
+    border-radius: 5px; 
+    padding: 10px;   
+}
+
+.fields>p{
+    margin:0px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+.type_payment{
+    display: block;
+    justify-content: center;
+    width: 45%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(102, 162, 172);
+    color: white;
+}
+
+
+#inputGroupPrepend3{
+    background-color: white;
+    border: 0px;
+}
+
+ /* .custom-control-input:checked ~ .custom-control-label::before { 
+     color:  black !important;
+    border-color: blue !important;
+    background-color: rgb(102, 162, 172) !important;
+    
+} */
+
+.message > p{
+    font-size: 10px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="row">
+                <div class="col-md-12 bg-light title ">
+                    <h4>Payment form example</h4>
+                </div>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="col-md-12 fields">
+                    <p>Some fields are missing</p>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label for="validationDefault1">Card #</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="XXXXXXXXXXXXXXXX" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault2">CVC #</label>
+                    <input type="text" class="form-control" id="validationDefault2" placeholder="0000" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault3">Amount</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend3">$</span>
+                        <input type="text" class="form-control" id="validationDefault3" placeholder="Amount" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="" value="" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+                </div>
+    
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">City</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pick a state</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">Zip</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault06">We accept:</label>
+                    <div class="type_payment">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline1"><i class="fab fa-cc-mastercard fa-lg"></i></label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline2"><i class="fab fa-cc-visa fa-lg"></i></label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline3"><i class="fab fa-cc-diners-club fa-lg"></i></label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline4"><i class="fab fa-cc-amex fa-lg"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 message">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <p>Add any notes here.</p>
+                </div>
+            </div>
+        </form>
+
+            <div class="row">
+                <div class="col-md-12 bg-light footer d-flex flex-row-reverse">
+                    <button type="submit" class="btn btn-primary m-1">Send</button>
+                    <button type="submit" class="btn btn-info m-1">Cancel</button>
+                    
+                </div>
+            </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
